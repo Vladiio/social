@@ -1,0 +1,8 @@
+{% extends 'base.html'%} {% block title %}Login{% endblock%}
+{% block content %}
+<form action="{% block form_action %}{% endblock %}">
+  <input placeholder="email" type="email" />
+  <input placeholder="password" type="password" />
+  <button type="submit">Submit</button>
+</form>
+{% endblock %}
